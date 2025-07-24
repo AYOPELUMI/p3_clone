@@ -98,7 +98,7 @@ const Header = () => {
     }, [isMenuOpen]);
 
     return (
-        <header className="px-[39px] lg:px-[84px] xl:px-[121px] lg:py-[37px] w-full pt-6 pb-9 bg-primary flex justify-between gap-20 items-center relative">
+        <header className="px-[39px] lg:px-[54px] xl:px-[121px] lg:py-[37px] w-full pt-6 pb-9 bg-primary flex justify-between gap-20 items-center relative">
             <img src={"/logo.svg"} alt="logo" />
 
             {/* Mobile menu button */}
@@ -120,7 +120,7 @@ const Header = () => {
             {/* Desktop navigation */}
             <div className="hidden lg:flex gap-3 mr-auto">
                 {links.map((link) => (
-                    <div className="w-[122px]" key={link}>
+                    <div className="lg:w-fit lg:mr-3 xl:mr-0 xl:w-[122px]" key={link}>
                         <AnimatedLink title={link} key={link} href="#" />
                     </div>
                 ))}
