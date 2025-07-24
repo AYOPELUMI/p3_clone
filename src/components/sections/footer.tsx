@@ -68,7 +68,7 @@ const Footer = () => {
                 {/* Footer Links (Desktop) */}
                 {footerLinks.map((section, index) => (
                     <div key={index} className="hidden lg:grid h-fit justify-center font-normal gap-[5px] tracking-[0.5px]">
-                        <span className="text-xl leading-6">{section.title}</span>
+                        <span className="text-xl leading-6 mb-1">{section.title}</span>
                         {section.links.map((link, linkIndex) => (
                             <Link key={linkIndex} href={link.href} className="text-base leading-6">
                                 {link.text}
@@ -93,11 +93,12 @@ const Footer = () => {
                     <div className="flex flex-col overflow-hidden gap-5">
                         <Input
                             placeholder="Enter your email"
-                            className="max-w-[332px] !rounded-[10px] !bg-transparent focus-visible:ring-[#CCED60] focus-visible:ring-[1px] !border-[#CCED60]"
+                            className="max-w-[332px] rounded-[10px] bg-transparent border-[#CCED60] 
+             focus:outline-none  focus-visible:ring-[1px] focus-visible:ring-[#CCED60]  !focus-visible:border-0"
                         />
                         <Button
                             variant="default"
-                            className="bg-[#CCED60] w-[169px] text-primary rounded-[10px] !text-base !leading-6 !font-normal !tracking-[0.5px]"
+                            className="bg-[#CCED60] w-[169px] text-primary hover:bg-[#CCED6080] rounded-[10px] !text-base !leading-6 !font-normal !tracking-[0.5px]"
                         >
                             Subscribe
                             <ArrowRight className="font-bold ml-6" />

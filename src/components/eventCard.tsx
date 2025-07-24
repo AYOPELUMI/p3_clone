@@ -49,10 +49,10 @@ export const EventCard = ({ isInverted = false, isRotated = false }: EventCardPr
                 <Button
                     variant="ghost"
                     className={cn(
-                        "flex items-center gap-3 !font-light text-base leading-7 !p-0",
+                        "flex items-center gap-3 !font-light text-base leading-7 !p-0 !px-3",
                         isInverted
-                            ? "bg-transparent text-primary hover:bg-primary/10"
-                            : "bg-transparent text-white hover:bg-white/10"
+                            ? "bg-transparent text-primary "
+                            : "bg-transparent text-white "
                     )}
                 >
                     Event Details <ArrowRight className="w-4 h-4 font-bold" />
